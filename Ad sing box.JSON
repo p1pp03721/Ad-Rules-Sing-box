@@ -1,0 +1,33 @@
+{
+  "route": {
+    "rules": [
+      {
+        "type": "field",
+        "domain_suffix": [
+          // 微博广告域名
+          "ad.weibo.com",
+          "wbapp-ad.wb.cn",
+          "adsdk.sina.cn",
+          "sax.sina.com.cn",
+          "ssp.sina.com.cn",
+          "cm.admaster.com.cn",
+
+          // 酷安广告域名
+          "ad.coolapk.com",
+          "ads.coolapk.com",
+          "adcdn.coolapk.com",
+          "adserver.coolapk.com",
+          "log.coolapk.com",
+          "tracking.coolapk.com"
+        ],
+        "outbound": "block"
+      }
+    ]
+  },
+  "outbounds": [
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
